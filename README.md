@@ -15,5 +15,5 @@
 
 # Duyurular
 Discord Suncumuz açılmak üzere
-Oyun içi buglarınızı oraya yazabilirsiniz
+Oyun içi hataları oraya yazabilirsiniz
 
