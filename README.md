@@ -1,2 +1,16 @@
 # QuardLauncher
-e
+
+
+
+
+
+# Yama Notları
+
+
+
+
+
+
+
+
+# Duyurular
