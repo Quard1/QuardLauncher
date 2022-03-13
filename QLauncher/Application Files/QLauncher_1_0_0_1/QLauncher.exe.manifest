@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="QLauncher.exe" version="1.0.0.1" publicKeyToken="5d2b14dfea26e4d3" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="pixil-frame-0 (2) (1).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="QLauncher" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="QLauncher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Bildirim Seçenekleri
+          Windows Kullanıcı Hesabı Denetimi düzeyini değiştirmek istiyorsanız,
+           requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması
+         kullanmak istiyorsanız, requestedExecutionLevel düğümünü silin.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CmlLib.dll" size="157184">
+      <assemblyIdentity name="CmlLib" version="3.3.5.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fJUofecxq5QelzOS0TTlPc6PXv7+cHS/qnjeFzlbKz0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guna.UI2.dll" size="2336712">
+      <assemblyIdentity name="Guna.UI2" version="2.0.3.1" publicKeyToken="E4B9CDD7B4CDE4B4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>34i21D6rS86wm8p8RA7wADFIb/PoPYrrgwR5aG/0H94=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.SharpZipLib.dll" size="204800">
+      <assemblyIdentity name="ICSharpCode.SharpZipLib" version="1.3.3.11" publicKeyToken="1B03E6ACF1164F73" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wofpsHqCUYKPNZFDZMiaN9tgawwdZEV/nrj6Iljw3uM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="701992">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tiSUnfiw46YVP9+3MKfG9JkLZZLuDZIuF4hDPSdmEPM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QLauncher.exe" size="153048">
+      <assemblyIdentity name="QLauncher" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BYyM9CJH4hOdXzR+D2L6NXi3HD+6Zu7PxEg52jVcbAU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SevenZip.dll" size="49664">
+      <assemblyIdentity name="SevenZip" version="19.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LmcmIk3Fa0L0V94b7r/MkGFDOobhJ+xgiiR/JxBgjiY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="pixil-frame-0 (2) (1).ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j43tdj/hjm0E/yhgJ/OpohO1CcimfAq7q480WIO3CCY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="QLauncher.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-1PFLL3J\USER" issuerKeyHash="91ac027681bead0b04f5a7a43f8000bc2452d36a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>z1HHOjg8jwdeSd4HsQzOZFuhKI9b867M6dgUfKjRWb0=</DigestValue></Reference></SignedInfo><SignatureValue>XpzFRzRN/THBVXfygyOL5/ljOXJk9tE6DsrJXOph/PNvbkj0eOoa1y6eW2/Qb+CX7DafbTUjtLkhZiaan+3iiENS9DzM1A/fUod5iqyjfBb8JanSpq7MBBnecC2VzMeIlw+pqBNdjZxZpcqZZF34irK3ZaatwDq6zNvSckiGbzY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s7pacYtaSBgPfsdGAN8tTrHwwlZvPsRAWHuXz1ho2zwXIMPPR6aXvO86DB2xzYRglibH+N+CWogvZ80+nkCyaVn2J19K33XT2Xez3J6U+LVcWWn4jvDiMt6GS7QXdya0K7vMYB+I/Dc4PinqKFAMaldbgO5NZQEZEGvMQGd8vuE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bd59d1a87c14d8e9ccaef35b8f28a15b64ce0cb107de495e078f3c383ac751cf" Description="" Url=""><as:assemblyIdentity name="QLauncher.exe" version="1.0.0.1" publicKeyToken="5d2b14dfea26e4d3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-1PFLL3J\USER</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>btnvmjPzbn1dFs0h7L1IeLiQj1m0U9UDyTx3CYf4wAI=</DigestValue></Reference></SignedInfo><SignatureValue>GO0e1nMzBdnktm9zVfsBXSnTMjQitdK3B6sqsNBculUWzTKyE0BsG/ZR56YJDkWzhii70TLxlWbEUTUqhRG7ymeqfl7Mu1MBGgitKNOM0h/FWvEHLQBN7RcoBbPFAif3wSDo7nQEmYjvbnYQHeM4mzFpG+Z9pG26fxEjDbMmoaI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s7pacYtaSBgPfsdGAN8tTrHwwlZvPsRAWHuXz1ho2zwXIMPPR6aXvO86DB2xzYRglibH+N+CWogvZ80+nkCyaVn2J19K33XT2Xez3J6U+LVcWWn4jvDiMt6GS7QXdya0K7vMYB+I/Dc4PinqKFAMaldbgO5NZQEZEGvMQGd8vuE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQWEyJGamTTrdDSl17G38krDANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtADEAUABGAEwATAAzAEoAXABVAFMARQBSMB4XDTIyMDMxMzE2NTcyNFoXDTIzMDMxMzIyNTcyNFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQAxAFAARgBMAEwAMwBKAFwAVQBTAEUAUjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAs7pacYtaSBgPfsdGAN8tTrHwwlZvPsRAWHuXz1ho2zwXIMPPR6aXvO86DB2xzYRglibH+N+CWogvZ80+nkCyaVn2J19K33XT2Xez3J6U+LVcWWn4jvDiMt6GS7QXdya0K7vMYB+I/Dc4PinqKFAMaldbgO5NZQEZEGvMQGd8vuECAwEAATANBgkqhkiG9w0BAQsFAAOBgQB5+cDXljx1+mBh2d/DS/kazSW9zPVro9WXgSb85vXw9INnRjwJw8d567hZ4u34EWPRYBn5spCyp84gwooNGMDBCCB80800CLbP+6osX5On8ZgMjjXWV7E/qvqDX+9sxKxiQLenTigdtOGEr5ik6GKwOlsLJtlnv4yU3LkGYMRVvQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
